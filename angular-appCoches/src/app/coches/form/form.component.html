@@ -1,0 +1,53 @@
+<div class="card bg-dark text-white">
+  <div class="card-header">
+    {{titulo}}
+  </div>
+
+  <div class="card-body">
+    <form #clienteForm="ngForm">
+
+      <div class="form-group row">
+        <label for="marca" class="col-form-label col-sm-2">Marca</label>
+        <div class="col-sm-6">
+          <input type="text"
+                 name="marca"
+                 [(ngModel)]="coche.marca"
+                 class="form-control"
+                 placeholder="Ingrese la marca"
+                 required>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="modelo" class="col-form-label col-sm-2">Modelo</label>
+        <div class="col-sm-6">
+          <input type="text"
+                 name="modelo"
+                 [(ngModel)]="coche.modelo"
+                 class="form-control"
+                 placeholder="Ingrese el modelo"
+                 required>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="form-group row">
+        <div class="col-sm-6">
+          <button *ngIf="!coche.id" class="btn btn-primary" (click)="create()">Crear</button>
+
+          <button *ngIf="coche.id" class="btn btn-primary" (click)="update()">Editar</button>
+
+        </div>
+
+      </div>
+
+
+    </form>
+
+  </div>
+
+
+</div>

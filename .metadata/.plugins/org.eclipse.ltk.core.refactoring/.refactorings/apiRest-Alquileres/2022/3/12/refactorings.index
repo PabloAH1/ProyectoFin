@@ -1,0 +1,10 @@
+1648063692688	Rename type 'ClienteRestController'
+1648063722286	Rename type 'ClienteDao'
+1648063737036	Rename type 'Cliente'
+1648063755157	Rename type 'ClienteService'
+1648063770499	Rename type 'ClienteServiceImpl'
+1648064038196	Rename type 'ApiRestClientesApplication'
+1648064049897	Rename type 'ApiRestClientesApplicationTests'
+1648064833609	Delete element
+1648070269176	Move compilation unit
+1648070293719	Rename type 'ApiRestClientesApplication'

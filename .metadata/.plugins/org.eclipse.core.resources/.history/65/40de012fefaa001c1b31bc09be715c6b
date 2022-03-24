@@ -1,0 +1,5 @@
+package com.formacion.app.entity;
+
+public class Cliente {
+
+}

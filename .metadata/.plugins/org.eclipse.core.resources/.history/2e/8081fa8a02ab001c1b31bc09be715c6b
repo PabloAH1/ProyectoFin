@@ -1,0 +1,5 @@
+package com.formacion.app.controller;
+
+public class AlquilerRestController {
+
+}

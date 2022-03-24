@@ -1,0 +1,47 @@
+package com.formacion.app.service;
+
+import java.util.List;
+
+import com.formacion.app.entity.Alquiler;
+import com.formacion.app.entity.Cliente;
+import com.formacion.app.entity.Coche;
+
+public class AlquilerServiceImpl implements AlquilerService{
+
+	@Override
+	public List<Alquiler> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Alquiler findById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Alquiler save(Alquiler alqulier) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void delete(Long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<Coche> findAllCoches() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Cliente> findAllClientes() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

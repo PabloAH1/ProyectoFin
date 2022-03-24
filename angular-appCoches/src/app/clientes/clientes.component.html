@@ -1,0 +1,62 @@
+<div class="card border-primary mb-3">
+  <div class="card-header">
+    Clientes
+  </div>
+  <div class="card-body text-primary">
+
+    <h4>Listado de clientes</h4>
+
+    <div class="my-2 text-left">
+      <button
+            class="btn btn.rounded btn-primary"
+            type="button"
+            [routerLink]="['/clientes/crear']" >
+      Nuevo Cliente
+    </button>
+
+</div>
+
+<table class="table  table-success table-striped">
+  <thead>
+    <tr>
+      <th scope="col"> </th>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Apellido</th>
+      <th scope="col">Email</th>
+      <th scope="col">Telefono</th>
+      <th scope="col">Nacimiento</th>
+      <th *ngIf="authService.token">
+       Accion
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of clientes; let i = index">
+      <th>
+
+      </th>
+      <th scope="row"><h1>{{item.id}}</h1></th>
+      <td><h2>{{item.nombre}}</h2></td>
+      <td><h2>{{item.apellido}}</h2></td>
+      <td><h2>{{item.email}}</h2></td>
+      <td><h2>{{item.telefono}}</h2></td>
+      <td><h2>{{item.nacimiento}}</h2></td>
+      <td *ngIf="authService.token">
+
+        <button class="btn btn-info btn-lg" [routerLink]="['/clientes/ver',item.id]" >Ver</button>
+        <button class="btn btn-primary btn-lg" [routerLink]="['/clientes/editar',item.id]">Editar</button>
+        <button class="btn btn-danger btn-lg" (click)="delete(item)">Eliminar</button>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+
+
+</div>
+
+</div>
+

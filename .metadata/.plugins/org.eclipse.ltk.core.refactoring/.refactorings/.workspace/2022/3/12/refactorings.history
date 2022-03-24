@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;apiRest-Clientes&apos; to &apos;apiRest-Alquileres&apos;" description="Rename resource &apos;apiRest-Clientes&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/apiRest-Clientes" name="apiRest-Alquileres" stamp="1648117411594" updateReferences="true"/>
+</session>

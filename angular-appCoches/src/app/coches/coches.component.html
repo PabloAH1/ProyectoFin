@@ -1,0 +1,57 @@
+<div class="card border-primary mb-3">
+  <div class="card-header">
+    Coches
+  </div>
+  <div class="card-body text-primary">
+
+    <h4>Listado de coches</h4>
+
+    <div class="my-2 text-left">
+      <button class="btn btn.rounded btn-primary" type="button" [routerLink]="['/coches/crear']">
+        Nuevo Coche
+      </button>
+
+    </div>
+    <div class="grid">
+      <table class="table  table-secondary">
+        <tr>
+          <td *ngFor="let item of coches; let i = index">
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">{{item.marca}} - {{item.modelo}}</h5>
+                <p class="card-text"></p>
+
+          <th>
+            <img *ngIf="item.imagen" src="http://localhost:8087/api/uploads/imagen/{{item.imagen}}" alt="sin imagen"
+              class="img-thumbnail rounded" style="width: 300px;">
+
+            <img *ngIf="!item.imagen" src="{{imagenSrc}}" alt="sin imagen" class="img-thumbnail rounded"
+              style="width: 300px;">
+          </th>
+    </div>
+
+    <th scope="row">
+      <h1>{{item.id}}</h1>
+    </th>
+    <td>
+      <h1>{{item.marca}}</h1>
+    </td>
+    <td>
+      <h1>{{item.modelo}}</h1>
+    </td>
+    <td *ngIf="authService.token">
+
+      <button class="btn btn-info  btn-lg" style="text-align: center;"
+        [routerLink]="['/coches/ver',item.id]">Ver</button>
+      <button class="btn btn-primary btn-lg" [routerLink]="['/coches/editar',item.id]">Editar</button>
+      <button class="btn btn-danger btn-lg" (click)="delete(item)">Eliminar</button>
+    </td>
+  </div>
+
+  </td>
+
+  </table>
+</div>
+</div>
+</div>

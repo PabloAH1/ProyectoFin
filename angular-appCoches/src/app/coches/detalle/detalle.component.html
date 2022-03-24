@@ -1,0 +1,43 @@
+<div class="card bg-card text-dark">
+  <div class="card-header">
+    Detalle Coche
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <ul class="list-group text-dark mb-3">
+          <li class="list-group">
+            <div class="col-sm">
+              <img src="http://localhost:8087/api/uploads/imagen/{{coche.imagen}}" alt="{{coche.imagen}}"
+              style="width: 600px;">
+            </div>
+
+          </li>
+          <li  class="list-group" >Nombre: {{coche.marca}}</li>
+          <li class="list-group">Modelo: {{coche.modelo}}</li>
+
+
+        </ul>
+
+        <div class="input-group">
+          <div class="custom-file">
+            <input (change)="seleccionarImagen($event)" type="file" class="custom-file-input" id="inputImg">
+            <label for="inputImg"  class="custom-file-label">Buscar Imagen</label>
+          </div>
+          <div class="input-group-append">
+            <button (click)="subirImagen()" class="btn btn-outline-info">Guardar</button>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
